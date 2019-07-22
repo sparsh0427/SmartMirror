@@ -40,5 +40,46 @@
  ##### ```  cd ~/MagicMirror ```
 #####    ```npm start  ```
   
+##### This will run your Magic Mirror with some pre installed modules. Now if you want to customize your magic mirror you have to install / clone some modules and then add some channgesto config.js folder in MagicMirror directory in home/pi . 
+
+## SPOTIFY MODULE 
+
+Open a new terminal and execute the following commands: 
+```  curl -sL https://dtcooper.github.io/raspotify/install.sh | sh  ```
+
+The module “Raspotify” allows connection to “Spotify”. It comes pre-configured and will be discoverable on the local network as a “Spotify Connect” device. However, it can be configured by editing the “/etc/default/raspotify” file which passes arguments to the “librespot” function. 
+
+``` # /etc/default/raspotify -- Arguments/configuration for librespot 
+ 
+# Device name on Spotify Connect #DEVICE_NAME="raspotify" 
+ 
+# Bitrate, one of 96 (low quality), 160 (default quality), or 320 (high quality) #BITRATE="160" 
+ 
+# Additional command line arguments for librespot can be set below.
+# See `librespot -h` for more info. Make sure whatever arguments you specify 
+# aren't already covered by other variables in this file. (See the daemon's 
+# config at `/lib/systemd/system/raspotify.service` for more technical details.) 
+# 
+# To make your device visible on Spotify Connect across the Internet add your 
+# username and password which can be set via "Set device password", on your 
+# account settings, use `--username` and `--password`. 
+# 
+# To choose a different output device (ie a USB audio dongle or HDMI audio out), 
+# use `--device` with something like `--device hw:0,1`. Your mileage may vary. 
+# 
+#OPTIONS="--username <USERNAME> --password <PASSWORD>" 
+ 
+# Uncomment to use a cache for downloaded audio files. Cache is disabled by 
+# default. It's best to leave this as-is if you want to use it, since 
+# permissions are properly set on the directory `/var/cache/raspotify'. 
+#CACHE_ARGS="--cache /var/cache/raspotify" 
+ 
+# By default, the volume normalization is enabled, add alternative volume 
+# arguments here if you'd like, but these should be fine. 
+#VOLUME_ARGS="--enable-volume-normalisation --linear-volume --initial-volume=100" 
+# /etc/default/raspotify -- Arguments/configuration for librespot ```
+ 
+
+
 
 
