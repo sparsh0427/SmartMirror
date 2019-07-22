@@ -124,3 +124,5 @@ delayCount: 5,
 
 
 
+## MAGIC MIRROR 3RD PARTY MODULES :
+https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules
