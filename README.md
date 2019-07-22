@@ -40,7 +40,7 @@
  ##### ```  cd ~/MagicMirror ```
 #####    ```npm start  ```
   
-##### This will run your Magic Mirror with some pre installed modules. Now if you want to customize your magic mirror you have to install / clone some modules and then add some channgesto config.js folder in MagicMirror directory in home/pi . 
+##### This will run your Magic Mirror with some pre installed modules.You can edit the preinstalled modules by settig the news feed of your location , weather of your area etc. by modifying the config.js file in MagicMirror directory. Now if you want to customize your magic mirror you have to install / clone some modules and then add some channgesto config.js folder in MagicMirror directory in home/pi . 
 
 ## SPOTIFY MODULE 
 
