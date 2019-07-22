@@ -79,6 +79,47 @@ The module “Raspotify” allows connection to “Spotify”. It comes pre-conf
 #VOLUME_ARGS="--enable-volume-normalisation --linear-volume --initial-volume=100" 
 # /etc/default/raspotify -- Arguments/configuration for librespot ```
  
+The user’s “Spotify” account can be added by uncommenting the line shown below and replacing the “<USERNAME>” and “<PASSWORD>” sections with the user’s “Spotify” account credentials. 
+
+``` #OPTIONS="--username <USERNAME> --password <PASSWORD>"  ```
+```
+#### “Last.fm” Scrobbler Installation and Configuration 
+The “Last.fm Scrobbler” will display track information such as the album cover art, song name, and artists for the currently playing song on the “Raspotify” module. 
+ Open a new terminal and execute the following commands: 
+ 
+ ``` cd  ~/MagicMirror/modules ```
+ ```git clone https://github.com/PtrBld/MMM-Scrobbler.git  ```
+
+Open a web browser and go to the URL “https://www.last.fm/join” and register for a “Last.fm” “API account”. 
+Copy the generated API key and place it into an empty text file for future use. 
+ 
+A23 
+ 
+Add the following code to the “config.js” file which is located in the “~/MagicMirror/config” directory and change the “username” and “apikey” sections to the username and API key that was created in the previous steps: 
+ 
+ ```
+ {     
+ module: 'MMM-Scrobbler',
+ position: 'top_right', 
+ config: { 
+ 
+username: 'Last.fm username', 
+apikey: 'Last.fm api key', 
+//time interval to search for new song (every 15 seconds)    
+updateInterval: 15 * 1000,    
+//how often should we try to retrieve a song if not listening    
+delayCount: 5,    
+//time interval to search for new song if the 5 times not listening is received.    
+//set this to the same number as updateInterval to ignore this option  
+ 
+  delayInterval: 120*1000,   
+  animationSpeed: 1000,   
+  showAlbumArt: true,       
+  showMetaData: true, 
+ 
+  //Determines the position of the meta text. Possible values: top, bottom, left, right    alignment: "bottom",         }   
+  } 
+  ```
 
 
 
