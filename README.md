@@ -8,7 +8,7 @@
 
 ##### It took me approx. 3 weeks to finish with this project . 
 
-### EQUIOMENT - 
+## EQUIPMENT - 
 ##### 1) Raspberry Pi Model 3B + (Model 3B would also work) *1 [https://www.amazon.in/iONiQ-Raspberry-Pi-LPDDR2-Bluetooth/dp/B07CWVSMLS/ref=sr_1_6?crid=1R7WUGYYO1U05&keywords=raspberry+pi+3b%2B&qid=1563791459&s=gateway&sprefix=raspberry+pi+3%2Caps%2C450&sr=8-6]
 ##### 2) MicroSD Card *1 (atlest 8 GB)
 ##### 3) Raspberry Pi Power Cable *1 
