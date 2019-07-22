@@ -28,3 +28,17 @@
 #### Once the pi starts up and you have configured it , run the following commands in the terminal - 
 ##### ```sudo apt-get update ```
 ##### ```sudo apt-get upgrade ```
+
+##### Now once the raspberry pi is updated we can install the magicmirror. First, open a browser and go to the following URL “https://magicmirror.builders”. Scroll down to the section labeled “Easy to install” and copy the following bash command: 
+
+##### ```bash -c "$(curl -sL https://raw.githubusercontent.com/MichMich/MagicMirror/master/installers/raspberry.sh) ```
+
+##### Next, open a terminal and paste the above code. Press enter to execute the command.  
+ 
+##### When the installation is finished execute the following command in the terminal to start the “MagicMirror2” software:  
+ 
+ ##### ```  cd ~/MagicMirror ```
+#####    ```npm start  ```
+  
+
+
