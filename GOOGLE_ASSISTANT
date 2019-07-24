@@ -1,0 +1,7 @@
+{     module: "MMM-GoogleAssistant", 
+    position: "top_right",     
+    config: {         
+    maxWidth: "100%", 
+    header: ""     
+    } 
+ }, 
