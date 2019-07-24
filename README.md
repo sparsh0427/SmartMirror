@@ -324,6 +324,14 @@ Add the following code to the “config.js” file which is located in the “~/
     } 
  }, 
  ```
+ This should probably get your google Assistant running.
+ 
+ ### NOTE: All these steps are also explained on well with Screenshots on https://developers.google.com/assistant/sdk/guides/service/python/
+ 
+ After Google Assiatnt is installed on your raspberry pi you need to create a shell script so that your google assistant can start automatically whenever the pi boots up . You can find how that should be done from here - 
+ https://www.youtube.com/watch?v=GXiKUuM5YGY
+ 
+ 
 
 
 ## MAGIC MIRROR 3RD 
